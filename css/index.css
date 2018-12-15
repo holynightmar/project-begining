@@ -2,7 +2,7 @@
 
 :root {
      font-family :"Courier New", Courier, monospace ;
-	 color: orange;
+	 color: blue;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 	 margin: auto;
 }
 
-header p.logo {
+header p {
      width:100%;
      font-size: 3rem;
      text-align: center;
@@ -122,67 +122,146 @@ nav ul.menu li a {
 .slide:nth-child(3) {
   background: #eee;
 }
-
-section#content{
-     margin: auto;
-	 padding-top: 20px;
+                                    //=====content=====
+	
+#content {
+	width:100%;
+	background:#f2f2f2;
 }
-
-div.container {
-     display: flex;
-	  justify-content: space-between;	  
-	  border-top: 7px double aqua;
+.img-border {
+	border:#fff 8px solid;
 }
-
-div .flex-box-1 {
-	 width: 450px;
-	 margin: auto; 
-	 padding-bottom: 20px;
+.box-1 {
+	overflow:hidden;
+	padding:40px 0 34px;
 }
-
-div .flex-box-2 {
-    display: flex;
-    justify-content: space-around; 
-	border: 3px solid aqua;
-	 padding: 20px;
-	 font-size: 3rem;
-	 margin: auto;
-	 background-image: url(../img/back.jpg);		
+.box-1 img {
+	float:left;
+	margin-top:-3px;
 }
-
+.box-1 h2 {
+	margin-bottom:8px;
+}
+.box-2 {
+	background: url(../img/line-1.gif) 0 0 repeat-x #f6f6f6;
+}
+.box-2>div {
+	background: url(../img/back.jpg) 0 bottom repeat-x;
+	padding:15px 0 36px 0;
+	font-size: 2rem;
+	color: white;
+	text-align:center;
+}
+.box-2>div p.text-4 {
+	margin-top:-7px;
+}
 .box-3 {
-     display:flex;	    
+	overflow:hidden;
+	padding:12px 0 0 0;
 }
-
-div .flex-box-3 {
-     float: left;
-	 align-items: center;	
-	 justify-content: space-around; 
-	 width: 200px;
-	 margin: auto; 
-	 padding: 20px;
- }
- 
-
-
-.events {
-     display:flex;
-     flex-direction	: column;
-	 width: 250px;
-	  justify-content: space-between; 
-	  margin: auto;
-	  float:right;
+.box-3>div {
+	width:180px;
+	float:left;
+	margin-right:25px;
 }
-
-.footer {
-     display: flex;
-	 width: 980px;
-	 justify-content: space-around;
-	 margin-bottom: 20px;
-	 align-items: center;
-	 border-top: 3px solid aqua;
-	 border-bottom: 3px solid aqua;
-	 
+.box-3>div a.link-2 {
+	display:inline-block;
+	margin:15px 0 6px 0;
+}
+.box-4 {
+}
+.date {
+	overflow:hidden;
+}
+.date strong {
+	display:inline-block;
+	background:url(../img/date.png) 0 0 no-repeat;
+	width:51px;
+	height:53px;
+	float:left;
+	margin-right:5px;
+	font-weight:normal;
+	color:#000;
+	font-size:40px;
+	line-height:48px;
+	text-align:center;
+}
+.date span {
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-style:italic;
+	color:#000;
+	font-size:20px;
+	line-height:24px;
+	display:inline-block;
+	overflow:hidden;
+	margin-top:21px;
+}
+.box-5 {
+	overflow:hidden;
+	padding-top:8px;
+}
+.box-5 img {
+	margin:4px 10px 0 0;
+}
+.box-6 {
+	overflow:hidden;
+	margin-top:13px;
+}
+.box-6>div {
+	width:290px;
+	float:left;
+	margin-right:35px;
+}
+.box-6 a.link-2 {
+	display:inline-block;
+	margin-bottom:3px;
+}
+.box-7 {
+	overflow:hidden;
+	margin-top:10px;
+}
+.box-7>div {
+	width:290px;
+	float:left;
+	margin-right:35px;
+}
+.box-7 a.link-2 {
+	display:inline-block;
+	margin-bottom:3px;
+}
+/****************************footer************************/
+footer {
+	width:980px;
+	overflow:hidden;
+	margin:0 auto;
+	padding:31px 0px 20px 0;
+}
+footer p {
+	float:left;
+	text-align:center;
+	width:580px;
+}
+.soc-icons {
+	overflow:hidden;
+	float:right;
+	margin:8px 73px 0 0;
+}
+.soc-icons span {
+	display:inline-block;
+	float:left;
+	color:#000;
+	font-size:20px;
+	line-height:27px;
+	margin-right:17px;
+}
+.soc-icons a {
+	display:inline-block;
+	float:left;
+	margin-right:19px;
+}
+.soc-icons a:hover img {
+	opacity:0.7;
 }
 
 
